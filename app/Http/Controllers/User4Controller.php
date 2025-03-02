@@ -8,7 +8,7 @@ class User4Controller extends Controller
 {
     public function index()
 {
-    return response("user" . str_replace('User', '', class_basename($this)));
-}
+    return view("user4");
 
+}
 }

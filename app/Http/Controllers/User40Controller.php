@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use function PHPUnit\Framework\returnArgument;
 
 class User40Controller extends Controller
 {
@@ -11,7 +12,7 @@ class User40Controller extends Controller
      */
     public function index()
     {
-        return response("user" . str_replace('User', '', class_basename($this)));
+        return view("user40");
     }
 
     /**
